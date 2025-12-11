@@ -277,7 +277,7 @@ npm run dev -- --port 3000
 
 ### Environment Variables:
 Create `.env` file in project root:
-```env
+```txt
 VITE_APP_NAME="Stylo Admin Pro"
 VITE_API_URL="https://api.yourdomain.com"
 VITE_ENABLE_ANALYTICS=true
