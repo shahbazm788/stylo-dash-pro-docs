@@ -89,6 +89,19 @@ const Button = ({
 };
 ```
 
+
+
+## 📋 Data Tables & Styling
+Our tables use a **Semantic Styling Pattern**. Each column (e.g., Brand, Price, Status) has its own dedicated Styled Component. This ensures:
+- **Pixel-perfect alignment** for different data types.
+- **Easy customization:** You can change the typography of the 'Price' column without affecting the 'User Name' column.
+- **Clean JSX:** Instead of generic `<td>` tags, you will see descriptive tags like `<Price>` or `<Category>`.
+
+**To modify a table:** Simply navigate to the feature's style file (e.g., `UserTable.styles.js`) and adjust the specific styled component.
+
+
+
+
 ## 🏗️ Creating New Components
 
 ### Step-by-Step Process
@@ -787,9 +800,7 @@ We are committed to providing you with the best development experience. If you e
 ### Support Channels
 
 1.  **Documentation** – This comprehensive guide and included documentation files.
-2.  **Email Support** – For priority assistance regarding bugs or setup issues: `support@yourdomain.com`
-3.  **Community Forum** – Discuss best practices, share solutions, and network with other developers: `forum.yourdomain.com`
-4.  **GitHub Issues** – For official bug reports and feature requests: (Link to your GitHub repository Issues tab)
+2.  **Email Support** – For priority assistance regarding bugs or setup issues: `parishahbaz007@gmail.com`
 
 ### Before Contacting Support
 
@@ -819,7 +830,7 @@ Confirming these steps ensures your environment is configured correctly:
 
 ## 🎉 Congratulations!
 
-Your **Stylo Admin Pro** dashboard is now successfully installed, configured, and ready for advanced development. You can immediately begin customizing your application:
+Your **Stylo Admin Dashboard** is now successfully installed, configured, and ready for advanced development. You can immediately begin customizing your application:
 
 1.  **Customizing the theme** – Match your brand colors and typography.
 2.  **Adding your content** – Replace placeholder data with real-world information.
@@ -842,6 +853,6 @@ Your **Stylo Admin Pro** dashboard is now successfully installed, configured, an
 | :--- | ---: |
 | ⬅️ [4. Add new page](add-new-page.md) | [6.DataViz](data-viz.md) ➡️ |
 
-*Need further assistance? Contact our dedicated support team at `support@stylo-admin.com`*
+*Need further assistance? Contact our dedicated support team at `parishahbaz007@gmail.com`*
 
 ---

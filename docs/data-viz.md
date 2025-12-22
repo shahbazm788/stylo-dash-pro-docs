@@ -190,7 +190,16 @@ export default Dashboard;
 
 While the Composed Chart is powerful, Recharts supports various essential chart types, each with its own use case.
 
-· Bar Chart (<BarChart>, <Bar>)
+· **Bar Chart** (`<BarChart>`, `<Bar>`)
   · Best Use Case: Comparing discrete data sets (e.g., sales by region).
+· **Pie Chart** (`<PieChart>`, `<Pie>`)
+  · Best Use Case: Showing proportions and percentages (e.g., traffic sources).
+· **Area Chart** (`<AreaChart>`, `<Area>`)
+  · Best Use Case: Visualizing volume or trends over time with filled areas.
+
 
 ---
+
+| | |
+| :--- | ---: |
+| ⬅️ [5.Component Customization & Creation ](components.md | [78. Zustand Store (State Management](using-store.md) ➡️ |

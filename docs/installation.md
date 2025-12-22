@@ -277,7 +277,7 @@ npm run dev -- --port 3000
 
 ### Environment Variables:
 Create `.env` file in project root:
-```txt
+```env
 VITE_APP_NAME="Stylo Admin Pro"
 VITE_API_URL="https://api.yourdomain.com"
 VITE_ENABLE_ANALYTICS=true
@@ -305,9 +305,7 @@ npx tsc --init
 
 ### Support Channels:
 1. **Documentation** – This guide and included docs
-2. **Email Support** – support@yourdomain.com
-3. **Community Forum** – forum.yourdomain.com
-4. **GitHub Issues** – For bug reports
+2. **Email Support** – officialstylo3@gmail.com [officialstylo3@gmail.com]
 
 ### Before Contacting Support:
 - Check this documentation

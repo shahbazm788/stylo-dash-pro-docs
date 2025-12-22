@@ -12,8 +12,8 @@ Adding new pages to your React dashboard is a fundamental skill that unlocks ful
 ⚠ Note: File paths may vary based on your project structure
 ```
 src/pages/
-├── CompleteDashboard.jsx   # Main analytics dashboard
-├── Dashboard.jsx          # Simplified dashboard
+├── CompleteDashboard.jsx   # Main  dashboard
+├── Analytics.jsx          # analytics dashboard
 ├── Products.jsx           # Product management
 ├── Orders.jsx            # Order management
 ├── Users.jsx             # User management
@@ -45,7 +45,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Import commonly used components
-import PageHeader from '../../ui/components/PageHeader';
 import Card from '../../ui/components/Card';
 import Button from '../../ui/components/Button';
 
@@ -69,15 +68,14 @@ const Reports = () => {
   return (
     <PageContainer>
       {/* Page Header */}
-      <PageHeader
-        title="Reports Dashboard"
-        subtitle="View and analyze all business reports"
-        actions={
+      
+      <h1>Reports Dashboard</h1>
+      <p>View and analyze all business report</p>
           <Button variant="primary" onClick={fetchReports}>
             Generate Report
           </Button>
-        }
-      />
+        
+    
 
       {/* Loading State */}
       {loading && (
@@ -251,38 +249,38 @@ import Reports from './pages/Reports';
 
 ### Step 3: Add to Navigation
 
+
 **Location:** `src/components/Sidebar.jsx` or your navigation component
 
+
+Our sidebar uses a centralized configuration array. To add your new page, simply append a new object to the navItems array. This keeps the code clean and ensures consistent styling.
 ```javascript
 // Add to your navigation items array
-// First, import the icon you want to use
-import { FaChartBar } from 'react-icons/fa'; // Add this with other icon imports
+// 1. First, import your desired icon
+import { FaChartBar } from 'react-icons/fa';
 
-// Then, return a new NavItem in your Sidebar component 
-return (
-  <SidebarContainer toggleOption={toggleOption}>
-    {/* Existing items... */}
-    
-    <NavItem to="/todo" collapsed={collapsed} 
-      active={activeIndex == 10 ? true : false}
-      onClick={() => hideSideBar(10)}
-    >
-      <FaCheckSquare />  
-      {toggleOption ? '' : <Span>Todo</Span>}
-    </NavItem>
-    
-    {/* ADD THIS NEW ITEM - Reports Page */}
-    <NavItem to="/reports" collapsed={collapsed} 
-      active={activeIndex == 11 ? true : false}
-      onClick={() => hideSideBar(11)}
-    >
-      <FaChartBar />  
-      {toggleOption ? '' : <Span>Reports</Span>}
-    </NavItem>
-  </SidebarContainer>
-);
+// 2. Find the navItems array at the top of Sidebar.jsx
+const navItems = [
+  { id: 1, label: 'Dashboard', path: '/', icon: <FaTachometerAlt /> },
+  // ... existing items
+  
+  // 3. ADD YOUR NEW ITEM HERE
+  
+  { 
+    id: 12,  // MUST BE UNIQUE: This ID is used as a React 'key' and for active state tracking
+    label: 'Reports', 
+    path: '/reports', 
+    icon: <FaChartBar /> 
+  },
+];
+
 ```
+💡 Why this is better?
+●No JSX clutter: You don't need to touch the component's return logic.
+●Auto-rendering: The sidebar automatically maps through this array and applies all active states and hover effects.
+●Easy Maintenance: Reordering or deleting pages is as simple as moving items within the array.
 
+⚠️ Important: The sidebar automatically detects the active route using useLocation. Ensure the path in your navItems exactly matches the path defined in App.jsx for the active highlighting to function correctly.
 ---
 
 ```

@@ -7,8 +7,6 @@
 ├── index.md
 ├── installation.md
 ├── theming.md
-├── tmp.md
-├── tree.md
 └── using-store.md
 
-1 directory, 11 files
+1 directory, 9 files

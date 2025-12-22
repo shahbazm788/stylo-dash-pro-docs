@@ -1,9 +1,9 @@
 
 ---
 
-# 🚀 Stylo Admin Pro – Introduction & Overview
+# 🚀 Stylo Admin Dashboard – Introduction & Overview
 
-Welcome to **Stylo Admin Pro**, a next-generation React dashboard template built for developers who demand **speed, scalability, and enterprise-grade architecture**.
+Welcome to **Stylo Admin Dashboard**, a next-generation React dashboard template built for developers who demand **speed, scalability, and enterprise-grade architecture**.
 
 This dashboard isn’t just a UI kit — it is a **complete production-ready system** designed for real SaaS apps, CRMs, analytics platforms, e-commerce backends, and internal business tools.
 
@@ -33,7 +33,7 @@ You get:
 | Technology | Purpose | Version |
 |-----------|---------|---------|
 | **React 18+** | High-performance UI | Latest |
-| **Vite 7+** | Lightning-fast bundling | 5.x |
+| **Vite 7+** | Lightning-fast bundling | 7.x |
 | **Styled Components 6+** | CSS-in-JS + theming | 6.x |
 | **React Icons** | Modern icon system | 4.x |
 | **Recharts 2** | Data visualizations | 2.x |
@@ -130,6 +130,9 @@ Powered by **Recharts**, providing:
 
 This dashboard includes **real apps**, not dummy pages:
 
+"Includes fully functional UI logic for apps, powered by local state management for seamless prototyping."
+
+
 - 📧 Email App  
 - 💬 Chat App  
 - 📅 Calendar Application  
@@ -146,10 +149,10 @@ These modules save **weeks of development time**.
 
 ## 📦 What’s Included (Full Package)
 
-- ✔ 150+ React components  
+- ✔ 40+ React components  
 - ✔ 10+ dashboard widgets  
 - ✔ 25+ charts  
-- ✔ 8 complete applications  
+- ✔ 5+ complete applications   
 - ✔ Zustand global store  
 - ✔ Theme system  
 - ✔ Full responsive design  

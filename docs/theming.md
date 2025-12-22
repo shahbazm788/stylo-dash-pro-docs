@@ -5,6 +5,13 @@
 This guide will walk you through every aspect of theme customization, from simple color changes to creating entirely new themes. Since this dashboard uses **Styled Components**, all theme properties are accessible instantly throughout your application via the `theme` object.
 
 ---
+** ✨ Try Before You Edit (Live Customizer) **
+Before you dive into the code, you can experiment with themes and colors in real-time using our Built-in Live Customizer.
+●Launch the App and look for the Settings/Gear Icon on the dashboard.
+●Use the Theme Switcher to toggle between Light, Dark, and System modes.
+●Select from Color Presets or use the Custom Color Picker to see your brand colors applied instantly across all components, charts, and buttons.
+●Once you find your perfect combination, follow the steps below to make those changes permanent in your codebase.
+●💡 Pro Tip: The Live Customizer uses the same theme tokens defined in the files below. It’s the fastest way to "prototype" your brand identity.
 
 ## **📁 Theme Structure Overview**
 
@@ -31,7 +38,7 @@ Your Components (Use theme)
 ---
 
 ## **🔧 Step-by-Step Theme Editing**
-Note: All changes will Appling
+Note: All changes will be applied instantly across the application
 
 ### **Step 1: Changing Primary Colors**
 
